@@ -5,8 +5,16 @@ const READLINE = require("readline-sync");
 // an adult. Write code that prints whether or not someone can see an
 // R-rated movie.
 console.log("*** Problem 1: R-rated ***");
-let age = READLINE.question("Enter your age: ");
+let age = READLINE.question("Enter your age: ")''
 let withAdult = READLINE.question("Are you with an adult? (yes or no): ");
+
+if(age>=18 || wtihAdult = "yes") {
+	console.log("Congrats you can see the movie!");
+
+}
+  else{
+  	console.log("Sorry, you can't see the movie.")
+  }
 
 
 // **** Problem 2: Umbrella ****
@@ -18,6 +26,16 @@ console.log("*** Problem 2: Umbrella ***");
 let raining = READLINE.question("Is it raining? (yes or no): ");
 let thunderstorming = READLINE.question("Is it thunderstorming? (yes or no): ");
 
+if(raining = "yes") {
+	console.log("Welp! Bring an umbrella with you!");
+}
+
+if(thunderstorming = "yes" && raining = "no" && thunderstorming = "no") {
+	console.log("Dang, don't bring an umbrella with you if you want to live");
+}
+else{
+	console.log("Cool! You don't have to bring an umbrella with you");
+}
 
 // **** Problem 3: Monkey Trouble ****
 // There are two monkeys: Bubbles and Spankey. You are in trouble if both of
@@ -27,6 +45,12 @@ console.log("*** Problem 3: Monkey Trouble ***");
 let bubbles = READLINE.question("Is Bubbles smiling? (yes or no): ");
 let spankey = READLINE.question("Is Spankey smiling? (yes or no): ");
 
+if(bubbles = "yes" && spankey = "yes" || bubbles = "no" && spankey = "no") {
+	console.log("Woohoo! Let's keep it up!");
+}
+else{
+	console.log("We have to make the monkey happy!");
+}
 
 // **** Problem 4: First Place ****
 // Write code that prints the largest of three scores. If there is a tie for
@@ -35,6 +59,10 @@ console.log("*** Problem 4: First Place ***");
 let score1 = READLINE.question("Enter the first score: ");
 let score2 = READLINE.question("Enter the second score: ");
 let score3 = READLINE.question("Enter the third score: ");
+
+if(score1 >= score2 && score1 >= score3){
+	console.log()
+}
 
 
 // **** Problem 5: Phone Shopping ****
@@ -49,6 +77,12 @@ let score3 = READLINE.question("Enter the third score: ");
 console.log("*** Problem 5: Phone Shopping ***");
 let money = READLINE.question("How much money do you have?: ");
 
+if(money >= 300 && 600) {
+	console.log("You can buy a middle-tier, or a top-tier phone!");
+}
+else{
+	console.log("")
+}
 
 // **** Problem 6: Guess My Number ****
 // Write code that plays a simple number guessing game with a user. You can
